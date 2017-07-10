@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+	<!--<meta name="viewport" content="width=1000">-->
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/jssor.js"></script>
+	<script type="text/javascript" src="js/jssor.slider.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/carousel.lite.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/KitProgress.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/device.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	<div class="menu-back"></div>
+	<div class="b b-1" id="menu">
+		<div class="b-block-menu clearfix">
+			<div class="b b-menu-icon left"></div>
+			<a href="index.html" class="b b-logo-cont left">
+				<div class="b-logo-icon left"></div>
+			</a>
+			<div class="b-date-cont right">
+				<h2>+7 913-856-22-44</h2>
+				<a href="mailto:info@otlm.ru" class="b-orange-butt b">
+					<div class="b-mail-icon"></div>
+					<span>info@otlm.ru</span>
+				</a>
+			</div>
+			<div class="b-menu">
+				<a href="workers.html">Специалисты</a>
+				<a href="services.html">Услуги</a>
+				<a href="#" class="active-page">Проекты</a>
+				<a href="LEK.html">ЛЭК</a>
+				<a href="contacts.html">Контакты</a>
+			</div>
+			<div class="slideout-menu" id="slideout-menu">
+				<a href="workers.html">Специалисты</a>
+				<a href="services.html">Услуги</a>
+				<a href="#" class="active-page">Проекты</a>
+				<a href="LEK.html">ЛЭК</a>
+				<a href="contacts.html">Контакты</a>
+				<span>+7 913-856-22-44</span>
+				<a href="#" class="small-a">отправить запрос</a>
+			</div>
+		</div>
+	</div>
+	<div class="project-top no-mobile">
+		<div class="b-block">
+			<h2>ПАРАМЕТРЫ ОТОБРОЖЕНИЯ</h2>
+			<h3 class="remove">Сбросить параметры</h3>
+			<div class="filters clearfix">
+				<div class="filter-1 clearfix">
+					<h3>Нозология</h3>
+					<div class="filter-column column-1">
+						<span class="checked-rb first-rb" data-fil="all">Все</span>
+						<span data-fil="allerg">Аллергология</span>
+						<span data-fil="bio">Биологические<br>препараты</span>
+						<span data-fil="vak">Вакцины</span>
+						<span data-fil="gastro">Гастроэнтерология</span>
+						<span data-fil="gemat">Гематология</span>
+						<span data-fil="gen">Генетические болезни</span>
+					</div>
+					<div class="filter-column column-2">
+						<span data-fil="gepa">Гепатология</span>
+						<span data-fil="ginek">Гинекология</span>
+						<span data-fil="derm">Дерматология</span>
+						<span data-fil="im-def">Иммунодефицит</span>
+						<span data-fil="imunolog">Иммунология</span>
+						<span data-fil="infekc">Инфекции</span>
+						<span data-fil="cardio">Кардиология</span>
+						<span data-fil="nevr">Неврология</span>
+					</div>
+					<div class="filter-column column-3">
+						<span data-fil="onk">Онкология</span>
+						<span data-fil="oft">Офтальмология</span>
+						<span data-fil="pediatr">Педиатрия</span>
+						<span data-fil="psih">Психиатрия</span>
+						<span data-fil="pul">Пульмонология</span>
+						<span data-fil="rev">Ревматология</span>
+						<span data-fil="res">Респираторные<br>заболевания</span>
+					</div>
+					<div class="filter-column column-4">
+						<span data-fil="terap">Терапия</span>
+						<span data-fil="travm">Травма</span>
+						<span data-fil="urol">Урология</span>
+						<span data-fil="hir">Хирургия</span>
+						<span data-fil="endo">Эндокринология</span>
+					</div>
+				</div>
+				<div class="filter-2">
+					<h3>Фаза исследования</h3>
+					<span class="checked-rb first-rb" data-fil="all">Все</span>
+					<span data-fil="p-bio">Биоэквивалентность</span>
+					<span data-fil="p-t">Терапевтическая эквивалентность</span>
+					<span data-fil="p-1">I</span>
+					<span data-fil="p-2">II</span>
+					<span data-fil="p-3">III</span>
+					<span data-fil="p-4">IV</span>
+				</div>
+				<div class="filter-3">
+					<h3>Год</h3>
+					<span class="checked-rb first-rb" data-fil="all">Все</span>
+					<span data-fil="y13">2013</span>
+					<span data-fil="y14">2014</span>
+					<span data-fil="y15">2015</span>
+					<span data-fil="y16">2016</span>
+					<span data-fil="y17">2017</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="project-table no-mobile">
+		<div class="b-block">
+			<div class="table" data-num="18">
+				<div class="table-head clearfix">
+					<div class="table-h-cell cell-1"><span>№ протокола</span></div>
+					<div class="table-h-cell cell-2"><span>МНН</span></div>
+					<div class="table-h-cell cell-3"><span>Область применения</span></div>
+					<div class="table-h-cell cell-4"><span>Показания к применению</span></div>
+					<div class="table-h-cell cell-5"><span>Фаза исследования</span></div>
+					<div class="table-h-cell cell-6"><span>Начало</span></div>
+					<div class="table-h-cell cell-7"><span>Конец</span></div>
+					<div class="table-h-cell cell-8"><span>Состояние</span></div>
+					<div class="table-h-cell cell-9"></div>
+				</div>
+				<div class="table-body">
+					<div class="b table-row clearfix row-1 infekc y17 p-bio">
+						<div class="table-cell cell-1 n-prot">
+							<span>П01/2016</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Ритонавир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2017</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2017</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Проводится</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>88</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Открытое, рандомизированное, перекрестное, четы-рехпериодное исследование сравнительной фарма-кокинетики и биоэквивалентности препаратов Ретвисет капсулы 100 мг (АО «Фармасинтез», Россия) и Норвир® таблетки, покрытые пленочной оболочкой, 100 мг (ООО «ЭббВи», Россия) у здоровых добро-вольцев</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «Фармасинтез», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-2 cardio p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>1-БЭ/О-2016</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Мельдоний</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Кардиология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Метаболическое средство</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>28</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Мельдоний Органика (мельдоний, 500 мг, капсулы, АО «Органика», Россия) и препарата Милдронат® (мельдоний, 500 мг, капсулы, АО «GRINDEX», Латвия) у здоровых добровольцев после однократного приема натощак</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО "Органика"</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-3 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>16-61/R</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Левофлоксацин</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Антибиотикотерапия</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>24</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Леваксела® (левофлоксацин, 500 мг, таблетки, покрытые пленочной оболочкой, АО «КРКА д. д., Ново место», Словения) и препарата Таваник® (левофлоксацин, 500 мг, таблетки, покрытые пленочной оболочкой, «Санофи-Авентис Дойчланд ГмбХ», Германия) после однократного перорального приема натощак здоровыми добровольцами женского и мужского пола</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «КРКА, д.д., Ново место», Словения</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-4 rev p-4 y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>RU-FANO-10-16</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Бетаметазон</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Ревматология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Ревматоидный артрит</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>IV</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>20</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Изучение фармакокинетических параметров препарата «Дипроспан» в отдаленном периоде при системном применении у пациентов в рутинной практике</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>Федеральное медико-биологическое агентство</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-5 cardio p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>16-62/R</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Амлодипин + Валсартан + Гидрохлоротиазид</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Кардиология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Гипертоническая болезнь</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>64</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности комбинированного препарата Амлодипин+Валсартан+Гидрохлоротиазид, 10 мг+160 мг+12.5 мг, таблетки, покрытые пленочной оболочкой, OOO «КРКА-РУС», Россия и препарата Ко-Эксфорж® (Амлодипин +Валсартан+Гидрохлоротиазид, 10 мг+160 мг+12.5 мг, таблетки, покрытые пленочной оболочкой, Новартис Фарма АГ, Швейцария) у здоровых добровольцев натощак</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «КРКА, д.д., Ново место», Словения</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-6 gastro y16 p-t">
+						<div class="table-cell cell-1 n-prot">
+							<span>РЕБ-04-2015</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Ребамипид</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Гастроэнтерология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Язвенная болезнь</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Терапевтическая эквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2017</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Проводится</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>140</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Открытое сравнительное рандомизированное многоцентровое исследование в параллельных группах эффективности и безопасности препарата Гастростат, таблетки кишечнорастворимые с пролонгированным действием, покрытые оболочкой, 300 мг (производства ЗАО «Фармацевтическое предприятие «Оболенское», Россия), в сравнении с препаратом Ребамипид Маклеодз, таблетки, покрытые пленочной оболочкой, 100 мг (производства  «Маклеодз Фармасьютикалз Лтд», Индия) у пациентов с язвенной болезнью желудка и эрозивным гастритом</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>ЗАО «Фармацевтическое предприятие «Оболенское», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-7 p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>П05/12</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Такролимус</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Трансплантология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Иммуносупрессия</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>48</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Открытое, рандомизированное перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Такролимус капсулы 1 мг (АО «Фармасинтез», Россия) и Програф капсулы 1 мг («Астеллас Ирланд Ко.Лтд», Ирландия)</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «Фармасинтез», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-8 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>13/15</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Атазанавир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>34</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Атазанавир Канон, капсулы, 150 мг, ЗАО «Канонфарма продакшн», Россия и препарата Реатаз®, капсулы, 150 мг, Бристол-Майерс Сквибб Компани, Германия у здоровых добровольцев после приема пищи</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-9 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>02/16</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Лопинавир + Ритонавир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>48</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Проспективное открытое рандомизированное перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Лопинавир + Ритонавир таблетки, покрытые пленочной оболочкой, 200 мг + 50 мг (ЗАО «Канонфарма продакшн», Россия) и Калетра® таблетки, покрытые пленочной оболочкой, 200 мг + 50 мг («ЭббВи Дойчланд Гмбх и Ко.КГ», Германия) у здоровых добровольцев</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-10 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>05/16</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Тенофовир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>22</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Проспективное открытое рандомизированное перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Тенофовир Канон, таблетки, покрытые пленочной оболочкой, 300 мг (ЗАО «Канонфарма продакшн», Россия) и Виреад®, таблетки, покрытые пленочной оболочкой, 300 мг («Гилеад Сайенсиз Лимитед», Ирландия) у здоровых добровольцев</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-11 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>01/16</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Дутастерид</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>60</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Проспективное, открытое, рандомизированное, перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Дутастерид Канон, капсулы 0,5 мг (ЗАО «Канонфарма продакшн», Россия) и Аводарт® капсулы, 0,5 мг (ЗАО «ГлаксоСмитКляйн Трейдинг», Россия, «ГлаксоСмитКляйн Фармасьютикалз С.А.», Польша) у здоровых добровольцев после однократного приема внутрь натощак</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-12 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>10/15</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Эфавиренз</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>28</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Проспективное открытое рандомизированное перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Эфавиренз Канон, таблетки, покрытые пленочной оболочкой, 600 мг (ЗАО «Канонфарма продакшн», Россия) и Стокрин, таблетки, покрытые пленочной оболочкой, 600 мг (Мерк Шарп и Доум Б.В., Нидерланды) у здоровых добровольцев</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-13 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>14/15</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Ритонавир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>52</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Ритонавир Канон, таблетки, покрытые пленочной оболочкой, 100 мг, ЗАО «Канонфарма продакшн», Россия и препарата Норвир®, таблетки, покрытые пленочной оболочкой, 100 мг, ЭббВи Дойчланд ГМБХ и КО.КГ, Германия, у здоровых добровольцев натощак</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-14 ginek p-t y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>Бусерелин 01</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Бусерелин</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Гинекология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Эндометриоз</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Терапевтическая эквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2017</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Проводится</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>120</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Открытое, рандомизированное, многоцентровое клиническое исследование по изучению сравнительной эффективности и безопасности лекарственных препаратов Бусерелин (бусерелин), микросферы (порошок) для приготовления суспензии для внутримышечного введения пролонгированного действия 3,75 мг (ЗАО Фармсинтез, Российская Федерация) и Бусерелин Депо®, лиофилизат для приготовления суспензии для внутримышечного введения пролонгированного действия 3,75 мг (ЗАО Фармсинтез, Российская Федерация) у взрослых пациенток с эндометриозом</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>ООО «Вита Этерна»</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-15 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>12/15</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Дарунавир</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>20</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>«Проспективное открытое рандомизированное перекрестное исследование сравнительной фармакокинетики и биоэквивалентности препаратов Дарунавир Канон, таблетки, покрытые пленочной оболочкой, 600 мг («ЗАО «Канонфарма продакшн», Россия) и Презиста®, таблетки, покрытые пленочной оболочкой, 600 мг («Янссен-Орто ЛЛС», Пуэрто-Рико) при их применении в комбинации с низкой дозой ритонавира у здоровых добровольцев»</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>«ЗАО  «Канонфарма продакшн», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-16 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>Р-01</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Зидовудин + Ламивудин</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>ВИЧ-инфекция</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>48</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Открытое рандомизированное перекрестное исследование биоэквивалентности лекарственных препаратов Дизавирин (зидовудин + ламивудин,  300 мг + 150 мг, таблетки, покрытые пленочной оболочкой, Дайсон Рисеч Лабораториз (Пвт.) Лтд., Пакистан) и Комбивир® (зидовудин + ламивудин, 300 мг + 150 мг, таблетки, покрытые пленочной оболочкой, Глаксо Оперэйшенс Великобритания Лтд, Великобритания) после однократного перорального приема натощак здоровыми добровольцами</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>ООО «Ригведа», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-17 onk p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>TEM-04-2011</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Темозоломид</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Онкология</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Опухоли головного мозга</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>36</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Исследование сравнительной фармакокинетики, биодоступности и безопасности препаратов Темозоломид, капсулы, 250 мг («Биосинтез Лэбораториз Прайвит Лимитед», Индия) и Темодал®, капсулы, 250 мг (Шеринг-Плау Лабо Н.В., Бельгия) у пациентов с онкологическими заболеваниями</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «Фармасинтез», Россия</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+					<div class="b table-row clearfix row-18 infekc p-bio y16">
+						<div class="table-cell cell-1 n-prot">
+							<span>15-57/R</span>
+						</div>
+						<div class="table-cell cell-2 mnn">
+							<span>Азитромицин</span>
+						</div>
+						<div class="table-cell cell-3 obl">
+							<span>Инфекционные болезни</span>
+						</div>
+						<div class="table-cell cell-4 prim">
+							<span>Антибиотик</span>
+						</div>
+						<div class="table-cell cell-5 phase">
+							<span>Биоэквивалентность</span>
+						</div>
+						<div class="table-cell cell-6 start">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-7 finish">
+							<span>2016</span>
+						</div>
+						<div class="table-cell cell-8 state">
+							<span>Завершено</span>
+						</div>
+						<div class="table-cell cell-9">
+							<span>38</span>
+						</div>
+						<div class="project-info clearfix">
+							<div class="info-left">
+								<h4>Название исследования:</h4>
+								<span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Азибиот® (азитромицин, 200 мг/5 мл, порошок для приготовления суспензии для приема внутрь, АО «КРКА, д.д., Ново место», Словения) и препарата Сумамед® форте (азитромицин, 200 мг/5 мл, порошок для приготовления суспензии для приема внутрь, Плива Хрватска д.о.о., Республика Хорватия) у здоровых добровольцев натощак</span>
+							</div>
+							<div class="info-right">
+								<h4>Спонсор:</h4>
+								<span>АО «КРКА, д.д., Ново место», Словения</span>
+							</div>
+						</div>
+						<div class="table-row-panel"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="project-top mobile">
+		<div class="filters">
+			<h2>Параметры отображения</h2>
+			<h3 class="remove">Сбросить параметры</h3>
+			<div class="filter-1">
+				<h3>Нозология</h3>
+				<span class="checked-rb first-rb" data-fil="all">Все</span>
+				<span data-fil="allerg">Аллергология</span>
+				<span data-fil="bio">Биологические препараты</span>
+				<span data-fil="vak">Вакцины</span>
+				<span data-fil="gastro">Гастроэнтерология</span>
+				<span data-fil="gemat">Гематология</span>
+				<span data-fil="gen">Генетические болезни</span>
+				<span data-fil="gepa">Гепатология</span>
+				<span data-fil="ginek">Гинекология</span>
+				<span data-fil="derm">Дерматология</span>
+				<span data-fil="im-def">Иммунодефицит</span>
+				<span data-fil="imunolog">Иммунология</span>
+				<span data-fil="infekc">Инфекции</span>
+				<span data-fil="cardio">Кардиология</span>
+				<span data-fil="nevr">Неврология</span>
+				<span data-fil="onk">Онкология</span>
+				<span data-fil="oft">Офтальмология</span>
+				<span data-fil="pediatr">Педиатрия</span>
+				<span data-fil="psih">Психиатрия</span>
+				<span data-fil="pul">Пульмонология</span>
+				<span data-fil="rev">Ревматология</span>
+				<span data-fil="res">Респираторные заболевания</span>
+				<span data-fil="terap">Терапия</span>
+				<span data-fil="travm">Травма</span>
+				<span data-fil="urol">Урология</span>
+				<span data-fil="hir">Хирургия</span>
+				<span data-fil="endo">Эндокринология</span>
+			</div>
+			<div class="filter-2">
+				<h3>Фаза исследования</h3>
+				<span class="checked-rb first-rb" data-fil="all">Все</span>
+				<span data-fil="p-bio">Биоэквивалентность</span>
+				<span data-fil="p-t">Терапевтическая эквивалентность</span>
+				<span data-fil="p-1">I</span>
+				<span data-fil="p-2">II</span>
+				<span data-fil="p-3">III</span>
+				<span data-fil="p-4">IV</span>
+			</div>
+			<div class="filter-3">
+				<h3>Год</h3>
+				<span class="checked-rb first-rb" data-fil="all">Все</span>
+				<span data-fil="y13">2013</span>
+				<span data-fil="y14">2014</span>
+				<span data-fil="y15">2015</span>
+				<span data-fil="y16">2016</span>
+				<span data-fil="y17">2017</span>
+			</div>
+		</div>
+	</div>
+	<div class="project-table-mobile mobile" data-num="3">
+		<div class="table-head clearfix">
+			<div class="table-h-cell cell-1"><span>МНН</span></div>
+			<div class="table-h-cell cell-2"><span>Фаза исследования</span></div>
+		</div>
+		<div class="table-body">
+			<div class="b table-row clearfix row-1 infekc y17 p-bio">
+				<div class="table-cell cell-1 mnn">
+					<span>Ритонавир</span>
+				</div>
+				<div class="table-cell cell-2 phase">
+					<span>Биоэквивалентность</span>
+				</div>			
+				<div class="project-info clearfix">
+					<h4>№ протокола: <span>П01/2016</span></h4>
+					<h4>Область приминения: <span>Инфекционные болезни</span></h4>
+					<h4>Показания к приминению: <span>ВИЧ-инфекция</span></h4>
+					<h4>Начало: <span>2017</span> Конец: <span>2017</span></h4>
+					<h4>Состояние: <span>Проводится</span></h4>
+					<h4>Кол-во добровольцев: <span>88</span></h4>
+					<h4>Название исследования: <span>Открытое, рандомизированное, перекрестное, четы-рехпериодное исследование сравнительной фарма-кокинетики и биоэквивалентности препаратов Ретвисет капсулы 100 мг (АО «Фармасинтез», Россия) и Норвир® таблетки, покрытые пленочной оболочкой, 100 мг (ООО «ЭббВи», Россия) у здоровых добро-вольцев</span></h4>
+					<h4>Спонсор: <span>АО «Фармасинтез», Россия</span></h4>
+				</div>
+				<div class="table-row-panel"></div>
+			</div>
+			<div class="b table-row row-2 clearfix cardio p-bio y16">		
+				<div class="table-cell cell-1 mnn">
+					<span>Мельдоний</span>
+				</div>		
+				<div class="table-cell cell-2 phase">
+					<span>Биоэквивалентность</span>
+				</div>		
+				<div class="project-info clearfix">
+					<h4>№ протокола: <span>1-БЭ/О-2016</span></h4>
+					<h4>Область приминения: <span>Кардиология</span></h4>
+					<h4>Показания к приминению: <span>Метаболическое средство</span></h4>
+					<h4>Начало: <span>2016</span> Конец: <span>2016</span></h4>
+					<h4>Состояние: <span>Завершено</span></h4>
+					<h4>Кол-во добровольцев: <span>28</span></h4>
+					<h4>Название исследования: <span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Мельдоний Органика (мельдоний, 500 мг, капсулы, АО «Органика», Россия) и препарата Милдронат® (мельдоний, 500 мг, капсулы, АО «GRINDEX», Латвия) у здоровых добровольцев после однократного приема натощак</span></h4>
+					<h4>Спонсор: <span>АО "Органика"</span></h4>
+				</div>
+				<div class="table-row-panel"></div>
+			</div>
+			<div class="b table-row row-3 clearfix infekc p-bio y16">
+				<div class="table-cell cell-1 mnn">
+					<span>Левофлоксацин</span>
+				</div>
+				<div class="table-cell cell-2 phase">
+					<span>Биоэквивалентность</span>
+				</div>			
+				<div class="project-info clearfix">
+					<h4>№ протокола: <span>16-61/R</span></h4>
+					<h4>Область приминения: <span>Инфекционные болезни</span></h4>
+					<h4>Показания к приминению: <span>Антибиотикотерапия</span></h4>
+					<h4>Начало: <span>2016</span> Конец: <span>2016</span></h4>
+					<h4>Состояние: <span>Завершено</span></h4>
+					<h4>Кол-во добровольцев: <span>24</span></h4>
+					<h4>Название исследования: <span>Сравнительное фармакокинетическое исследование биоэквивалентности препарата Леваксела® (левофлоксацин, 500 мг, таблетки, покрытые пленочной оболочкой, АО «КРКА д. д., Ново место», Словения) и препарата Таваник® (левофлоксацин, 500 мг, таблетки, покрытые пленочной оболочкой, «Санофи-Авентис Дойчланд ГмбХ», Германия) после однократного перорального приема натощак здоровыми добровольцами женского и мужского пола</span></h4>	
+					<h4>Спонсор: <span>АО «КРКА, д.д., Ново место», Словения</span></h4>	
+				</div>
+				<div class="table-row-panel"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

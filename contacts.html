@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+	<!--<meta name="viewport" content="width=1000">-->
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/jssor.js"></script>
+	<script type="text/javascript" src="js/jssor.slider.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/carousel.lite.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/KitProgress.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/device.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	<div class="menu-back"></div>
+	<div class="b b-1" id="menu">
+		<div class="b-block-menu clearfix">
+			<div class="b b-menu-icon left"></div>
+			<a href="index.html" class="b b-logo-cont left">
+				<div class="b-logo-icon left"></div>
+			</a>
+			<div class="b-date-cont right">
+				<h2>+7 913-856-22-44</h2>
+				<a href="mailto:info@otlm.ru" class="b-orange-butt b">
+					<div class="b-mail-icon"></div>
+					<span>info@otlm.ru</span>
+				</a>
+			</div>
+			<div class="b-menu">
+				<a href="workers.html">Специалисты</a>
+				<a href="services.html">Услуги</a>
+				<a href="Projects.html">Проекты</a>
+				<a href="LEK.html">ЛЭК</a>
+				<a href="#" class="active-page">Контакты</a>
+			</div>
+			<div class="slideout-menu" id="slideout-menu">
+				<a href="workers.html">Специалисты</a>
+				<a href="services.html">Услуги</a>
+				<a href="Projects.html">Проекты</a>
+				<a href="LEK.html">ЛЭК</a>
+				<a href="#" class="active-page">Контакты</a>
+				<span>+7 913-856-22-44</span>
+				<a href="#" class="small-a">отправить запрос</a>
+			</div>
+		</div>
+	</div>
+	<div class="map clearfix">
+		<div class="map-block" id="map_canvas"></div>
+	</div>
+	<div class="b cont-footer">
+		<div class="b-block clearfix">
+			<div class="cont-info left">
+				<h3>Адрес:</h3>
+				<span class="adres">634045, Россия, Томск, ул. Нахимова, 1а</span>
+				<h3 class="no-mobile">Контакты:</h3>
+				<span class="no-mobile">Бородулина Елена Валентиновна<br>+7 913-856-22-44<br>E-mail: <a href="mailto:info@otlm.ru" class="mail-contacts">info@otlm.ru</a></span>
+				<h3 class="mobile">Контактное лицо:</h3>
+				<span class="mobile">Елена Валентиновна Бородулина<br>+7 913-856-22-44<br>E-mail: <a href="mailto:info@otlm.ru" class="mail-contacts">info@otlm.ru</a></span>
+			</div>
+			<div class="cont-form right">
+				<h3>Обратная связь</h3>
+				<form>
+					<div class="left">
+						<input type="text" name="name" placeholder="Имя">
+						<input type="text" name="surname" placeholder="Фамилия">
+						<input type="text" name="patronymic" placeholder="Отчество">
+						<input type="text" name="company-name" placeholder="Компания">
+						<input type="text" name="phone" id="phone" placeholder="Телефон">
+						<input class="last-input" type="text" name="e-mail" id="e-mail" placeholder="Эл. почта">
+					</div>
+					<div class="right">
+						<textarea placeholder="Ваш вопрос"></textarea>
+						<button class="right">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-1">
+			<h3>Оставьте заявку</h3>
+			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required/>
+					<label for="tel">Введите Ваш номер телефона</label>
+					<input type="text" id="tel" name="phone" required/>
+					<label for="tel">Введите Ваш E-mail</label>
+					<input type="text" id="tel" name="email" required/>
+					<input type="hidden" name="subject" value="Заказ"/>
+					<input type="submit" class="ajax b-orange-butt" value="Заказать">
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</div>
+			</form>
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+</body>
+</html>
