@@ -1144,8 +1144,10 @@ input:-moz-placeholder {
 	font-size: 80%;
 	text-align: left;
 	display: block;
-	line-height: 2;
+	line-height: 1;
 	margin-left: 0px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 .project-top span {
 	position: relative;
@@ -2806,7 +2808,7 @@ input:-moz-placeholder {
 
 	/*Projects*/
 	.project-top {
-		width: 450px;
+		width: 100%;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
@@ -2814,7 +2816,7 @@ input:-moz-placeholder {
 		margin-left: 0;
 		font-size: 20px;
 		padding-right: 0;
-		padding-left: 20px;
+		padding-left: 33px;
 	}
 	.project-top h2::before {
 		display: none;
@@ -2822,7 +2824,7 @@ input:-moz-placeholder {
 	.project-top h3 {
 		font-family: "HelveticaNeueCyr-Thin";
 		font-size: 20px;
-		padding-left: 20px;
+		padding-left: 33px;
 	}
 	.project-top span {
 		font-size: 14px;
@@ -2832,26 +2834,35 @@ input:-moz-placeholder {
 	}
 	.project-top span::before {
 		top: 9px;
-		left: 0px;
+		left: 2px;
 		width: 5px;
 		height: 5px;
 	}
 	.filter-1 h3 {
-		padding-left: 20px;
+		padding-left: 33px;
 	}
 	.filter-1, .filter-2, .filter-3 {
 		float: none;
 		width: auto;
 		padding-left: 0;
 	}
+	.filter-1 span {
+		box-sizing: border-box;
+		float: left;
+		width: 50%;
+	}
+	.filter-2, .filter-3 {
+		width: 50%;
+		float: left;
+	}
 	.filters {
-		padding-left: 55px;
+		padding-left: 42px;
 	}
 	.filters span {
-		padding-left: 20px;
+		padding-left: 33px;
 	}
 	.project-table-mobile {
-		width: 450px;
+		width: 100%;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
