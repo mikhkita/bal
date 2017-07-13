@@ -211,7 +211,7 @@ $(document).ready(function(){
                 "margin-bottom": 20 * proph,
             });
             $('.b-menu').css({
-                "width": 491 * propw,
+                "width": 494 * propw,
             });
             $('.b-menu a').css({
                 "margin-right": 30 * propw,
@@ -551,7 +551,7 @@ $(document).ready(function(){
                 "margin-bottom": 20 * proph,
             });
             $('.b-menu').css({
-                "width": 491 * propw,
+                "width": 494 * propw,
             });
             $('.b-menu a').css({
                 "margin-right": 30 * propw,
