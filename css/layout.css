@@ -275,6 +275,8 @@ input:-moz-placeholder {
 	}
 	.b-2-text .background {
 		background-color: #05a0d2;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 	.b-2-span-1 {
@@ -308,6 +310,8 @@ input:-moz-placeholder {
 	}
 	.b-2-company .background {
 		background-color: rgb(0, 70, 139);
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 	.slider-content {
@@ -390,6 +394,8 @@ input:-moz-placeholder {
 	}
 	.b-3-name .background {
 		background-color: #05a0d2;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 	.b-3-text {
@@ -532,6 +538,8 @@ input:-moz-placeholder {
 	.prem-block .background {
 		mix-blend-mode: multiply;
 		background-color: #00468b;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 	}
 	.prem-block span {
 		display: block;
@@ -563,6 +571,8 @@ input:-moz-placeholder {
 	}
 	.b-4-name .background {
 		background-color: #05a0d2;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 	.prem-block:first-child .prem-icon {
@@ -617,6 +627,8 @@ input:-moz-placeholder {
 	}
 	.b-5-name .background {
 		background-color: #05a0d2;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 	.b-5-text {
@@ -632,6 +644,8 @@ input:-moz-placeholder {
 	}
 	.b-5-text .background {
 		background-color: #00468b;
+		//opacity: 0.8;
+		opacity: 0.8\9;
 		mix-blend-mode: multiply;
 	}
 
@@ -699,7 +713,6 @@ input:-moz-placeholder {
 .cont-info span {
 	display: block;
 	font-size: 90%;
-	margin-bottom: 78px;
 	line-height: 1.5;
 	font-family: "HelveticaNeueCyr-Thin";
 }
@@ -774,13 +787,13 @@ input:-moz-placeholder {
 	background-image: url("../i/service.svg");
 	background-repeat: no-repeat;
 	background-size: 400%;
-    background-position: -36em -4.5em;
+    background-position: -60em -4.5em;
 }
 .step-3 .step-top {
 	background-image: url("../i/service.svg");
 	background-repeat: no-repeat;
     background-size: 400%;
-    background-position: -60em -4.5em;
+    background-position: -36em -4.5em;
 }
 .service-step {
 	width: 470px;
@@ -824,7 +837,7 @@ input:-moz-placeholder {
 	font-family: "HelveticaNeueCyr-Roman";
 }
 .service-act ul {
-	line-height: 1.4;
+	line-height: 1.2;
 	font-size: 95%;
 }
 .service-act ul li {
@@ -1183,7 +1196,7 @@ input:-moz-placeholder {
 	padding-left: 3.5625em;
 }
 .column-4 {
-	padding-left: 3.5625em;
+	padding-left: 2.5625em;
 }
 .filter-1, .filter-2, .filter-3 {
 	float: left;
@@ -1418,6 +1431,12 @@ input:-moz-placeholder {
 @media screen and (max-width: 1020px){
 
 }
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.background {
+		opacity: 0.8;
+	}
+}
 /*vertical mobile*/
 @media screen and (min-width: 240px) and (max-width: 450px){
 	/*main*/
@@ -1552,6 +1571,8 @@ input:-moz-placeholder {
 		}
 		.b-2-text-2 .background {
 			background-color: rgb(5, 160, 210);
+			//opacity: 0.8;
+			opacity: 0.8\9;
 			mix-blend-mode: multiply;
 		}
 		.b-2-text-2 h2 {
@@ -1569,6 +1590,8 @@ input:-moz-placeholder {
 		}
 		.b-2-company .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-2-company-name {
 			margin-bottom: 0px !important;
@@ -1733,6 +1756,8 @@ input:-moz-placeholder {
 		}
 		.b-5-name .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-5 h2 {
 			font-size: 35px;
@@ -1740,6 +1765,8 @@ input:-moz-placeholder {
 		}
 		.b-5-text .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-5-text {
 			font-size: 18px;
@@ -1796,7 +1823,6 @@ input:-moz-placeholder {
 	}
 	.cont-info span {
 		font-size: 16px;
-		margin-bottom: 0px !important;
 		line-height: 2;
 	}
 	.cont-info .adres {
@@ -1893,10 +1919,10 @@ input:-moz-placeholder {
 		background-position: 14% 9%;
 	}
 	.step-2 .step-top {
-		background-position: 50% 9%;
+		background-position: 85% 9%;
 	}
 	.step-3 .step-top {
-		background-position: 85% 9%;
+		background-position: 50% 9%;
 	}
 
 	/*workers*/
@@ -1955,14 +1981,15 @@ input:-moz-placeholder {
 		background-image: url("../i/worker-7.jpg");
 	}
 	.worker-info {
+		display: none;
 		width: 360px;
 		margin: 0 auto;
-		height: 0;
-		border-bottom: 0px;
+		border-bottom: 17px solid #00468b;
+		/*border-bottom: 0px;
 		transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
 		-webkit-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
 		-moz-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
-		-o-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
+		-o-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;*/
 		overflow: hidden;
 	}
 	.worker-info span {
@@ -1977,8 +2004,7 @@ input:-moz-placeholder {
 		line-height: 1.2;
 	}
 	.open-info {
-		height: 360px;
-		border-bottom: 17px solid #00468b;
+		display: block;
 	}
 	
 	/*LEK*/
@@ -2316,6 +2342,8 @@ input:-moz-placeholder {
 		}
 		.b-2-text-3 .background {
 			background-color: rgb(5, 160, 210);
+			//opacity: 0.8;
+			opacity: 0.8\9;
 			mix-blend-mode: multiply;
 		}
 		.b-2-text-3 h2 {
@@ -2333,6 +2361,8 @@ input:-moz-placeholder {
 		}
 		.b-2-company .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-2-company-name {
 			margin-bottom: 0px !important;
@@ -2498,6 +2528,8 @@ input:-moz-placeholder {
 		}
 		.b-5-name .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-5 h2 {
 			font-size: 35px;
@@ -2505,6 +2537,8 @@ input:-moz-placeholder {
 		}
 		.b-5-text .background {
 			mix-blend-mode: normal;
+			//opacity: 1;
+			opacity: 1\9;
 		}
 		.b-5-text {
 			font-size: 18px;
@@ -2647,10 +2681,10 @@ input:-moz-placeholder {
 		background-position: 16% 9%;
 	}
 	.step-2 .step-top-content {
-		background-position: 52% 9%;
+		background-position: 88% 9%;
 	}
 	.step-3 .step-top-content {
-		background-position: 88% 9%;
+		background-position: 52% 9%;
 	}
 
 	/*workers*/
@@ -2709,14 +2743,14 @@ input:-moz-placeholder {
 		background-image: url("../i/worker-7.jpg");
 	}
 	.worker-info {
+		display: none;
 		width: 360px;
-		border-bottom: 0px;
-		height: 0;
+		border-bottom: 17px solid #00468b;
 		margin: 0 auto;
-		transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
+		/*transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
 		-webkit-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
 		-moz-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
-		-o-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;
+		-o-transition: height 0.5s ease-in-out, border-bottom 0.05s ease-in-out 0.5s;*/
 		overflow: hidden;
 	}
 	.worker-info span {
@@ -2731,8 +2765,7 @@ input:-moz-placeholder {
 		line-height: 1.2;
 	}
 	.open-info {
-		height: 360px;
-		border-bottom: 17px solid #00468b;
+		display: block;
 	}
 
 	/*LEK*/
@@ -2939,9 +2972,11 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+	html {
+		font-size: 12px !important;
+	}
 	body {
 		min-width: 768px;
-		font-size: 12px !important;
 	}
 	.b-block {
 		width: 100% !important;
@@ -3121,7 +3156,7 @@ input:-moz-placeholder {
 		}
 		.prem-block {
 			width: 256px !important;
-			height: 182px !important;
+			height: 190px !important;
 			margin: 0 !important;
 			margin-bottom: 3px !important;
 		}
@@ -3142,6 +3177,10 @@ input:-moz-placeholder {
 		}
 		.prem-block:last-child .prem-icon {
 			height: 119px !important;
+		}
+		.prem-2 {
+			margin-left: 3px !important;
+			margin-right: 3px !important;
 		}
 	
 	.b-5 {
@@ -3171,9 +3210,6 @@ input:-moz-placeholder {
 		padding-right: 44px !important;
 		margin-top: 44px !important;
 		margin-bottom: 40px !important;
-	}
-	.cont-info span {
-		margin-bottom: 59px !important;
 	}
 	.cont-info .adres {
 		margin-bottom: 15px !important;
