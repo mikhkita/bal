@@ -1475,7 +1475,7 @@ input:-moz-placeholder {
 			font-size: 20px;
 			text-align: left;
 			color: black;
-			line-height: 2;
+			line-height: 2.2;
 			opacity: 0;
 		}
 		.slideout-menu span {
@@ -1593,6 +1593,9 @@ input:-moz-placeholder {
 			//opacity: 1;
 			opacity: 1\9;
 		}
+		.b-2-company span {
+			padding: 9px 16px 5px 19px !important;
+		}
 		.b-2-company-name {
 			margin-bottom: 0px !important;
 		}
@@ -1648,19 +1651,22 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-4 .b-block {
-			padding-top: 35px;
+			padding-top: 65px;
 		}
 		.prem-slider {
 			display: block;
 			width: 100%;
 			margin: 0 auto;
-			margin-bottom: 55px !important;
+			margin-bottom: 35px !important;
+			box-sizing: border-box;
+			padding: 0 14px;
 		}
 		.prem-slider-2 {
 			display: none;
 		}
 		.prem-slider .slick-dots {
-			bottom: -50px !important;
+			bottom: -34px !important;
+			left: 0;
 		}
 		.prem-slide {
 			height: 255px !important;
@@ -1722,7 +1728,7 @@ input:-moz-placeholder {
 		}
 		.second-h2 {
 			width: 234px !important;
-			margin-bottom: 18px !important;
+			margin-bottom: 38px !important;
 		}
 		.b-4 .hor-h2 {
 			display: none !important;
@@ -1737,7 +1743,7 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-5 .b-block {
-			padding-top: 14px !important;
+			padding-top: 19px !important;
 		}
 		.b-5-image {
 			display: block !important;
@@ -1893,6 +1899,9 @@ input:-moz-placeholder {
 	.service-act h3 {
 		font-size: 20px;
 	}
+	.step-top h3 {
+		margin: 0 30px;
+	}
 	.service-act h3 {
 		margin-bottom: 9px;
 	}
@@ -1916,13 +1925,16 @@ input:-moz-placeholder {
 		display: none;
 	}
 	.step-1 .step-top {
-		background-position: 14% 9%;
+		background-position: 16% 12%;
+		background-size: 450%;
 	}
 	.step-2 .step-top {
-		background-position: 85% 9%;
+		background-position: 83% 12%;
+		background-size: 500%;
 	}
 	.step-3 .step-top {
-		background-position: 50% 9%;
+		background-position: 50% 12%;
+		background-size: 500%;
 	}
 
 	/*workers*/
@@ -1961,6 +1973,7 @@ input:-moz-placeholder {
 	}
 	.worker-mobile-1 {
 		background-image: url("../i/worker-1.jpg");
+		background-position: center -48px;
 	}
 	.worker-mobile-2 {
 		background-image: url("../i/worker-2.jpg");
@@ -2133,6 +2146,7 @@ input:-moz-placeholder {
 	.project-top .remove {
 		padding-bottom: 0px !important; 
 		padding-top: 15px !important;
+		text-decoration: underline;
 	}
 	.project-top span {
 		font-size: 14px;
@@ -2187,6 +2201,8 @@ input:-moz-placeholder {
 	.project-info h4 {
 		display: block;
 		font-size: 14px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 	.project-info h4 span {
 		font-family: "HelveticaNeueCyr-Roman";
@@ -2283,7 +2299,7 @@ input:-moz-placeholder {
 			font-size: 20px;
 			text-align: left;
 			color: black;
-			line-height: 2;
+			line-height: 2.2;
 			opacity: 0;
 		}
 		.slideout-menu span {
@@ -2426,13 +2442,15 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-4 .b-block {
-			padding-top: 47px !important;
+			padding-top: 65px !important;
 		}
 		.prem-slider {
 			display: block;
 			width: 100% !important;
 			margin: 0 auto;
-			margin-bottom: 55px !important;
+			margin-bottom: 35px !important;
+			box-sizing: border-box;
+			padding: 0 14px;
 		}
 		.prem-slider .slick-next {
 			right: 15px;
@@ -2493,7 +2511,7 @@ input:-moz-placeholder {
 			background-color: #05a0d2;
 			padding: 6px 22px 3px !important;
 			margin: 0 auto;
-			margin-bottom: 18px;
+			margin-bottom: 38px;
 			width: 331px !important;
 		}
 		.b-4-name {
@@ -2506,7 +2524,7 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-5 .b-block {
-			padding-top: 14px !important;
+			padding-top: 19px !important;
 		}
 		.b-5-image {
 			float: right;
@@ -2640,6 +2658,9 @@ input:-moz-placeholder {
 		font-size: 20px;
 	}
 	.step-top h3 {
+		margin: 0 30px;
+	}
+	.step-top h3 {
 		margin: 0 8px;
 	}
 	.service-act {
@@ -2675,16 +2696,19 @@ input:-moz-placeholder {
 		margin: 0 auto;
 		background-image: url("../i/service.svg");
 		background-repeat: no-repeat;
-		background-size: 400%;
+		background-size: 500%;
 	}
 	.step-1 .step-top-content {
 		background-position: 16% 9%;
+		background-size: 450%;
 	}
 	.step-2 .step-top-content {
-		background-position: 88% 9%;
+		background-position: 85% 12%;
+		background-size: 500%;
 	}
 	.step-3 .step-top-content {
-		background-position: 52% 9%;
+		background-position: 51% 12%;
+		background-size: 500%;
 	}
 
 	/*workers*/
@@ -2723,6 +2747,7 @@ input:-moz-placeholder {
 	}
 	.worker-mobile-1 {
 		background-image: url("../i/worker-1.jpg");
+		background-position: center -48px;
 	}
 	.worker-mobile-2 {
 		background-image: url("../i/worker-2.jpg");
@@ -2894,6 +2919,7 @@ input:-moz-placeholder {
 	.project-top .remove {
 		padding-bottom: 0px;
 		padding-top: 15px;
+		text-decoration: underline;
 	}
 	.project-top span {
 		font-size: 14px;
@@ -2958,6 +2984,8 @@ input:-moz-placeholder {
 	.project-info h4 {
 		display: block;
 		font-size: 14px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 	}
 	.project-info h4 span {
 		font-family: "HelveticaNeueCyr-Roman";
