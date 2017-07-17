@@ -58,7 +58,7 @@ $(document).ready(function(){
             if ( $(event.target).hasClass("first-rb") ) {
                 $('.filter-2 span').removeClass("checked-rb");
                 $(event.target).addClass("checked-rb");
-                fil1 = [];
+                fil2 = [];
             } else {
                 $('.filter-2 .first-rb').removeClass("checked-rb");
                 $(event.target).addClass("checked-rb");
@@ -67,7 +67,7 @@ $(document).ready(function(){
         } else {
             if ( !($(event.target).hasClass("first-rb")) ) {
                 $(event.target).removeClass("checked-rb");
-                for (var i = 0; i < fil1.length; i++) {
+                for (var i = 0; i < fil2.length; i++) {
                     if ( fil2[i] ==  $(event.target).data("fil") ) {
                         fil2.splice(i,1);
                     }
