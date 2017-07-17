@@ -1,7 +1,7 @@
+var fil1 = [];
+var fil2 = [];
+var fil3 = [];
 $(document).ready(function(){
-    var fil1 = "all";
-    var fil2 = "all";
-    var fil3 = "all";
     $('.worker').fancybox({
         smallBtn: false,
     });
@@ -29,31 +29,88 @@ $(document).ready(function(){
     });
     $('.filter-1 span').click(function(event){
         if ( !( $(event.target).hasClass("checked-rb") ) ) {
-            $('.filter-1 span').removeClass("checked-rb");
-            $(event.target).addClass("checked-rb");
+            if ( $(event.target).hasClass("first-rb") ) {
+                $('.filter-1 span').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil1 = [];
+            } else {
+                $('.filter-1 .first-rb').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil1[fil1.length] = $(event.target).data("fil");
+            }
+        } else {
+            if ( !($(event.target).hasClass("first-rb")) ) {
+                $(event.target).removeClass("checked-rb");
+                for (var i = 0; i < fil1.length; i++) {
+                    if ( fil1[i] ==  $(event.target).data("fil") ) {
+                        fil1.splice(i,1);
+                    }
+                };
+            }
         }
-        fil1 = $(event.target).data("fil");
+        if ( !($('.filter-1 span').hasClass("checked-rb")) ) {
+            $('.filter-1 .first-rb').addClass("checked-rb");
+            fil1 = [];
+        }
     });
     $('.filter-2 span').click(function(event){
         if ( !( $(event.target).hasClass("checked-rb") ) ) {
-            $('.filter-2 span').removeClass("checked-rb");
-            $(event.target).addClass("checked-rb");
+            if ( $(event.target).hasClass("first-rb") ) {
+                $('.filter-2 span').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil1 = [];
+            } else {
+                $('.filter-2 .first-rb').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil2[fil2.length] = $(event.target).data("fil");
+            }
+        } else {
+            if ( !($(event.target).hasClass("first-rb")) ) {
+                $(event.target).removeClass("checked-rb");
+                for (var i = 0; i < fil1.length; i++) {
+                    if ( fil2[i] ==  $(event.target).data("fil") ) {
+                        fil2.splice(i,1);
+                    }
+                };
+            }
         }
-        fil2 = $(event.target).data("fil");
+        if ( !($('.filter-2 span').hasClass("checked-rb")) ) {
+            $('.filter-2 .first-rb').addClass("checked-rb");
+            fil2 = [];
+        }
     });
     $('.filter-3 span').click(function(event){
         if ( !( $(event.target).hasClass("checked-rb") ) ) {
-            $('.filter-3 span').removeClass("checked-rb");
-            $(event.target).addClass("checked-rb");
+            if ( $(event.target).hasClass("first-rb") ) {
+                $('.filter-3 span').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil3 = [];
+            } else {
+                $('.filter-3 .first-rb').removeClass("checked-rb");
+                $(event.target).addClass("checked-rb");
+                fil3[fil3.length] = $(event.target).data("fil");
+            }
+        } else {
+            if ( !($(event.target).hasClass("first-rb")) ) {
+                $(event.target).removeClass("checked-rb");
+                for (var i = 0; i < fil3.length; i++) {
+                    if ( fil3[i] ==  $(event.target).data("fil") ) {
+                        fil3.splice(i,1);
+                    }
+                };
+            }
         }
-        fil3 = $(event.target).data("fil");
+        if ( !($('.filter-3 span').hasClass("checked-rb")) ) {
+            $('.filter-3 .first-rb').addClass("checked-rb");
+            fil3 = [];
+        }
     });
     $('.remove').click(function(){
         $('.project-top span').removeClass("checked-rb");
         $('.first-rb').addClass("checked-rb");
-        fil1 = "all";
-        fil2 = "all";
-        fil3 = "all";
+        fil1 = [];
+        fil2 = [];
+        fil3 = [];
     });
     $('.b-menu-icon').click(function(){
         if ( !($('.slideout-menu').hasClass("open")) ) {
@@ -74,52 +131,76 @@ $(document).ready(function(){
         } else {
             n = $('.project-table-mobile').data("num");
         }
-        if ( (fil1 == "all") && (fil2 == "all") && (fil3 == "all") ) {
+        if ( (fil1.length == 0) && (fil2.length == 0) && (fil3.length == 0) ) {
             $('.table-row').removeClass("close-tr");
         } else {
             for (var i = 1; i <= n; i++) {
                 var element = $('.row-'+i);
-                if ( (fil1 == "all") && (fil2 == "all") && (fil3 != "all") ) {
-                    element.removeClass("close-tr");
-                    if ( !(element.hasClass(fil3)) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length == 0) && (fil2.length == 0) && (fil3.length != 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil3.length; j++) {
+                        if ( element.hasClass(fil3[j]) ) {
+                            element.removeClass("close-tr");
+                        }
+                    };
                 }
-                if ( (fil1 != "all") && (fil2 == "all") && (fil3 == "all") ) {
-                    element.removeClass("close-tr");
-                    if ( !(element.hasClass(fil1)) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length != 0) && (fil2.length == 0) && (fil3.length == 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil1.length; j++) {
+                        if ( element.hasClass(fil1[j]) ) {
+                            element.removeClass("close-tr");
+                        }
+                    };
                 }
-                if ( (fil1 == "all") && (fil2 != "all") && (fil3 == "all") ) {
-                    element.removeClass("close-tr");
-                    if ( !(element.hasClass(fil2)) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length == 0) && (fil2.length != 0) && (fil3.length == 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil2.length; j++) {
+                        if ( element.hasClass(fil2[j]) ) {
+                            element.removeClass("close-tr");
+                        }
+                    };
                 }
-                if ( (fil1 == "all") && (fil2 != "all") && (fil3 != "all") ) {
-                    element.removeClass("close-tr");
-                    if ( (!(element.hasClass(fil3))) || (!(element.hasClass(fil2))) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length == 0) && (fil2.length != 0) && (fil3.length != 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil3.length; j++) {
+                        for (var k = 0; k < fil2.length; k++) {
+                            if ( (element.hasClass(fil3[j])) && (element.hasClass(fil2[k])) ) {
+                                element.removeClass("close-tr");
+                            }
+                        };
+                    };
                 }
-                if ( (fil1 != "all") && (fil2 == "all") && (fil3 != "all") ) {
-                    element.removeClass("close-tr");
-                    if ( (!(element.hasClass(fil3))) || (!(element.hasClass(fil1))) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length != 0) && (fil2.length == 0) && (fil3.length != 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil3.length; j++) {
+                        for (var k = 0; k < fil1.length; k++) {
+                            if ( (element.hasClass(fil3[j])) && (element.hasClass(fil1[k])) ) {
+                                element.removeClass("close-tr");
+                            }
+                        };
+                    };
                 }
-                if ( (fil1 != "all") && (fil2 != "all") && (fil3 == "all") ) {
-                    element.removeClass("close-tr");
-                    if ( (!(element.hasClass(fil1))) || (!(element.hasClass(fil2))) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length != 0) && (fil2.length != 0) && (fil3.length == 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil1.length; j++) {
+                        for (var k = 0; k < fil2.length; k++) {
+                            if ( (element.hasClass(fil1[j])) && (element.hasClass(fil2[k])) ) {
+                                element.removeClass("close-tr");
+                            }
+                        };
+                    };
                 }
-                if ( (fil1 != "all") && (fil2 != "all") && (fil3 != "all") ) {
-                    element.removeClass("close-tr");
-                    if ( (!(element.hasClass(fil3))) || (!(element.hasClass(fil2))) || (!(element.hasClass(fil1))) ) {
-                        element.addClass("close-tr");
-                    }
+                if ( (fil1.length != 0) && (fil2.length != 0) && (fil3.length != 0) ) {
+                    element.addClass("close-tr");
+                    for (var j = 0; j < fil3.length; j++) {
+                        for (var k = 0; k < fil1.length; k++) {
+                            for (var l = 0; l < fil2.length; l++) {
+                                if ( (element.hasClass(fil3[j])) && (element.hasClass(fil1[k])) && (element.hasClass(fil2[l]))) {
+                                    element.removeClass("close-tr");
+                                }
+                            }
+                        };
+                    };
                 }
             };
         }
