@@ -320,7 +320,7 @@ input:-moz-placeholder {
 		z-index: 1;
 	}
 	.slick-dots {
-		display: none;
+		display: none !important;
 	}
 	.b-2-slide {
 		height: 100%;
@@ -865,6 +865,7 @@ input:-moz-placeholder {
 }
 .last-div {
 	border: none !important;
+	padding-bottom: 0px !important;
 }
 .step-top-content {
 	width: 100%;
@@ -1495,7 +1496,7 @@ input:-moz-placeholder {
 			line-height: 1;
 		}
 		.open {
-			height: 435px;
+			height: 451px;
 			padding-top: 72px;
 			padding-bottom: 60px;
 			visibility: visible;
@@ -1552,6 +1553,9 @@ input:-moz-placeholder {
 		}
 	.b-2 {
 		background-image: url("../i/background-1-mobile.jpg");
+		background-size: 100% 474px;
+		background-position: center top;
+		background-repeat: no-repeat;
 	}
 		.b-2-text-2 {
 			display: block;
@@ -1563,7 +1567,7 @@ input:-moz-placeholder {
 			display: none;
 		}
 		.b-2-span-1, .b-2-span-2, .b-2-span-3, .b-2-span-4 {
-			padding: 5px 15px 5px 22px !important;
+			padding: 7px 15px 7px 22px !important;
 			margin: 0 !important;
 			background-color: transparent;
 			text-align: left;
@@ -1600,7 +1604,7 @@ input:-moz-placeholder {
 			margin-bottom: 0px !important;
 		}
 		.company-slider {
-			height: auto;
+			height: auto !important;
 		}
 		.slider-content {
 			width: 100%;
@@ -1651,7 +1655,7 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-4 .b-block {
-			padding-top: 65px;
+			padding-top: 43px !important;
 		}
 		.prem-slider {
 			display: block;
@@ -1659,7 +1663,7 @@ input:-moz-placeholder {
 			margin: 0 auto;
 			margin-bottom: 35px !important;
 			box-sizing: border-box;
-			padding: 0 14px;
+			padding: 0 14px !important;
 		}
 		.prem-slider-2 {
 			display: none;
@@ -1797,6 +1801,9 @@ input:-moz-placeholder {
 	.slick-dots li.slick-active button {
 		background-color: #00abf2;
 	}
+	.slick-dots {
+		display: block !important;
+	}
 	.slick-arrow {
 		display: none !important;
 	}
@@ -1849,9 +1856,11 @@ input:-moz-placeholder {
 	}
 	.cont-form form input {
 		font-size: 16px;
-		padding: 8px 0px 8px 8px !important;
+		padding: 8px !important;
 		box-sizing: border-box;
 		width: 100% !important;
+		border: 0;
+		box-shadow: 0 0 0 1px rgb(150, 150, 150);
 	}
 	.cont-form .right {
 		margin-left: 0px !important;
@@ -1911,6 +1920,10 @@ input:-moz-placeholder {
 	.service-act ul {
 		font-size: 18px;
 	}
+	.service-act ul li {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
 	.service-act span {
 		font-size: 16px;
 		margin-top: -6px;
@@ -1926,15 +1939,15 @@ input:-moz-placeholder {
 	}
 	.step-1 .step-top {
 		background-position: 16% 12%;
-		background-size: 450%;
+		background-size: 430%;
 	}
 	.step-2 .step-top {
-		background-position: 83% 12%;
-		background-size: 500%;
+		background-position: 84% 13%;
+		background-size: 470%;
 	}
 	.step-3 .step-top {
-		background-position: 50% 12%;
-		background-size: 500%;
+		background-position: 51% 13%;
+		background-size: 470%;
 	}
 
 	/*workers*/
@@ -2029,6 +2042,7 @@ input:-moz-placeholder {
 		padding: 20px !important;
 		box-sizing: border-box;
 		text-align: left;
+		line-height: 1.5;
 	}
 	.about-lek-mobile h3 {
 		font-size: 16px;
@@ -2131,7 +2145,7 @@ input:-moz-placeholder {
 		margin-left: 0;
 		font-size: 20px;
 		padding-right: 0;
-		padding-left: 20px;
+		padding-left: 33px;
 	}
 	.project-top h2::before {
 		display: none;
@@ -2139,14 +2153,27 @@ input:-moz-placeholder {
 	.project-top h3 {
 		font-family: "HelveticaNeueCyr-Thin";
 		font-size: 20px;
-		padding-left: 20px !important;
-		padding-bottom: 20px !important;
-		padding-top: 35px !important;
+		padding-left: 33px !important;
+		padding-bottom: 8px !important;
+		padding-top: 33px !important;
 	}
 	.project-top .remove {
 		padding-bottom: 0px !important; 
 		padding-top: 15px !important;
-		text-decoration: underline;
+		position: relative;
+	}
+	.remove::before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #00bdf5;
+		bottom: -3px;
+		left: 33px;
+		width: 189px;
+		height: 1px;
+	}
+	.remove:hover {
+		text-decoration: none !important;
 	}
 	.project-top span {
 		font-size: 14px;
@@ -2155,14 +2182,14 @@ input:-moz-placeholder {
 		font-family: "HelveticaNeueCyr-Bold";
 	}
 	.project-top span::before {
-		top: 9px;
-		left: 0px;
+		top: 14px;
+		left: 3px;
 		width: 5px;
 		height: 5px;
 	}
 	.filter-1 h3 {
-		padding-left: 20px;
-		padding-top: 25px !important;
+		padding-left: 33px;
+		padding-top: 28px !important;
 	}
 	.filter-1, .filter-2, .filter-3 {
 		float: none;
@@ -2170,10 +2197,12 @@ input:-moz-placeholder {
 		padding-left: 0;
 	}
 	.filters {
-		padding-left: 55px;
+		padding-left: 42px;
 	}
 	.filters span {
-		padding-left: 20px;
+		padding-left: 33px;
+		padding-top: 12px;
+		padding-bottom: 5px;
 	}
 	.project-table-mobile {
 		width: 360px;
@@ -2214,6 +2243,10 @@ input:-moz-placeholder {
 	.filter-1::before, .filter-2::before {
 		display: none;
 	}
+	.start-year {
+		border-right: 1px solid black;
+		padding-right: 5px;
+	}
 }
 /*mobile horizontal*/
 @media screen and (min-width: 450px) and (max-width: 768px) {
@@ -2233,7 +2266,7 @@ input:-moz-placeholder {
 		height: 32px !important;
 	}
 	.slick-dots {
-		display: none;
+		display: none !important;
 	}
 	.b-1{
 	}
@@ -2318,7 +2351,7 @@ input:-moz-placeholder {
 			line-height: 1;
 		}
 		.open {
-			height: 360px;
+			height: 372px;
 			padding-top: 53px;
 			padding-bottom: 30px;
 			visibility: visible;
@@ -2350,7 +2383,7 @@ input:-moz-placeholder {
 			display: none;
 		}
 		.b-2-span-1, .b-2-span-2, .b-2-span-3, .b-2-span-4 {
-			padding: 5px 15px 5px 22px !important;
+			padding: 7px 15px 7px 22px !important;
 			margin: 0 !important;
 			background-color: transparent;
 			text-align: left;
@@ -2387,7 +2420,7 @@ input:-moz-placeholder {
 			text-align: center;
 		}
 		.company-slider {
-			height: auto;
+			height: auto !important;
 		}
 		.slider-content {
 			width: 90%;
@@ -2442,7 +2475,7 @@ input:-moz-placeholder {
 		background-color: #00468b;
 	}
 		.b-4 .b-block {
-			padding-top: 65px !important;
+			padding-top: 43px !important;
 		}
 		.prem-slider {
 			display: block;
@@ -2610,6 +2643,8 @@ input:-moz-placeholder {
 		box-sizing: border-box;
 		margin-bottom: 18px !important;
 		padding: 10px 10px 8px !important;
+		border: 0;
+		box-shadow: 0 0 0 1px rgb(150, 150, 150);
 	}
 	.cont-form form textarea {
 		box-sizing: border-box;
@@ -2673,6 +2708,10 @@ input:-moz-placeholder {
 	.service-act span {
 		font-size: 16px;
 	}
+	.service-act ul li {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
 	.service-act h3,
 	.service-act ul li,
 	.service-act span {
@@ -2699,16 +2738,16 @@ input:-moz-placeholder {
 		background-size: 500%;
 	}
 	.step-1 .step-top-content {
-		background-position: 16% 9%;
-		background-size: 450%;
+		background-position: 18% 9%;
+		background-size: 430%;
 	}
 	.step-2 .step-top-content {
 		background-position: 85% 12%;
-		background-size: 500%;
+		background-size: 470%;
 	}
 	.step-3 .step-top-content {
-		background-position: 51% 12%;
-		background-size: 500%;
+		background-position: 52% 12%;
+		background-size: 470%;
 	}
 
 	/*workers*/
@@ -2919,7 +2958,20 @@ input:-moz-placeholder {
 	.project-top .remove {
 		padding-bottom: 0px;
 		padding-top: 15px;
-		text-decoration: underline;
+		position: relative;
+	}
+	.remove::before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #00bdf5;
+		bottom: -3px;
+		left: 33px;
+		width: 189px;
+		height: 1px;
+	}
+	.remove:hover {
+		text-decoration: none !important;
 	}
 	.project-top span {
 		font-size: 14px;
@@ -2929,7 +2981,7 @@ input:-moz-placeholder {
 	}
 	.project-top span::before {
 		top: 14px;
-		left: 2px;
+		left: 3px;
 		width: 5px;
 		height: 5px;
 	}
@@ -2996,6 +3048,10 @@ input:-moz-placeholder {
 	}
 	.filter-1::before, .filter-2::before {
 		display: none;
+	}
+	.start-year {
+		border-right: 1px solid black;
+		padding-right: 5px;
 	}
 }
 
