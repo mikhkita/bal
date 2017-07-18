@@ -2,48 +2,58 @@
 
 @font-face {
 	font-family: 'HelveticaNeueCyr-Light';
-	src: url('../fonts/HelveticaNeueCyr-Light.eot') format('embedded-opentype'),
-		 url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
-		 url('../fonts/HelveticaNeueCyr-Light.ttf')  format('truetype'),
-		 url('../fonts/HelveticaNeueCyr-Light.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../fonts/helveticaneuecyr-light.eot');
+    src: url('../fonts/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-light.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr-Roman';
-	src: url('../fonts/helveticaneuecyr-roman.eot') format('embedded-opentype'),
-		 url('../fonts/helveticaneuecyr-roman.woff') format('woff'),
-		 url('../fonts/helveticaneuecyr-roman.ttf')  format('truetype'),
-		 url('../fonts/helveticaneuecyr-roman.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../fonts/helveticaneuecyr-roman.eot');
+    src: url('../fonts/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-roman.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr-Medium';
-	src: url('../fonts/helveticaneuecyr-medium.eot') format('embedded-opentype'),
-		 url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
-		 url('../fonts/helveticaneuecyr-medium.ttf')  format('truetype'),
-		 url('../fonts/helveticaneuecyr-medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../fonts/helveticaneuecyr-medium.eot');
+    src: url('../fonts/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-medium.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr-Thin';
-	src: url('../fonts/helveticaneuecyr-thin.eot') format('embedded-opentype'),
-		 url('../fonts/helveticaneuecyr-thin.woff') format('woff'),
-		 url('../fonts/helveticaneuecyr-thin.ttf')  format('truetype'),
-		 url('../fonts/helveticaneuecyr-thin.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../fonts/helveticaneuecyr-thin.eot');
+    src: url('../fonts/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-thin.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'HelveticaNeueCyr-Bold';
-	src: url('../fonts/helveticaneuecyr-bold.eot') format('embedded-opentype'),
-		 url('../fonts/helveticaneuecyr-bold.woff') format('woff'),
-		 url('../fonts/helveticaneuecyr-bold.ttf')  format('truetype'),
-		 url('../fonts/helveticaneuecyr-bold.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	src: url('../fonts/helveticaneuecyr-bold.eot');
+    src: url('../fonts/helveticaneuecyr-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-bold.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-bold.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-bold.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-bold.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html,
@@ -1678,38 +1688,39 @@ input:-moz-placeholder {
 		}
 		.prem-slide .prem-icon {
 			background-size: contain !important;
+			margin-bottom: 10px;
 		}
 		.prem-slide-1 .prem-icon {
 			background-image: url("../i/15year.png");
 			background-position: center;
-			height: 179px !important;
+			height: 169px !important;
 		}
 		.prem-slide-2 .prem-icon {
 			background-image: url("../i/100.png");
 			background-position: center;
 			background-size: 80% !important;
-			height: 154px !important;
+			height: 144px !important;
 		}
 		.prem-slide-3 .prem-icon {
 			background-image: url("../i/time.png");
 			background-position: center;
-			height: 179px !important;
+			height: 169px !important;
 		}
 		.prem-slide-4 .prem-icon {
 			background-image: url("../i/docs.png");
 			background-position: center;
-			height: 155px !important;
+			height: 145px !important;
 		}
 		.prem-slide-5 .prem-icon {
 			background-image: url("../i/1000.png");
 			background-position: center;
-			height: 180px !important;
-			background-size: 80% !important;
+			height: 170px !important;
+			/*background-size: 80% !important;*/
 		}
 		.prem-slide-6 .prem-icon {
 			background-image: url("../i/med.png");
 			background-position: center;
-			height: 154px !important;
+			height: 144px !important;
 		}
 		.prem-slide span {
 			display: block;
@@ -1939,15 +1950,15 @@ input:-moz-placeholder {
 	}
 	.step-1 .step-top {
 		background-position: 16% 12%;
-		background-size: 430%;
+		background-size: 450%;
 	}
 	.step-2 .step-top {
-		background-position: 84% 13%;
-		background-size: 470%;
+		background-position: 82% 14%;
+		background-size: 520%;
 	}
 	.step-3 .step-top {
-		background-position: 51% 13%;
-		background-size: 470%;
+		background-position: center 13.5%;
+		background-size: 520%;
 	}
 
 	/*workers*/
@@ -2102,6 +2113,7 @@ input:-moz-placeholder {
 		font-family: "HelveticaNeueCyr-Bold";
 		padding-bottom: 20px;
 		padding-right: 27px;
+		line-height: 1.5;
 	}
 	.lek-el-h3:hover {
 		cursor: pointer;
@@ -2117,6 +2129,9 @@ input:-moz-placeholder {
 		height: 8px;
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+	.lek-el-open-h3 {
+		padding-bottom: 0 !important;
 	}
 	.lek-el-open-h3::before {
 		-webkit-transform: rotate(180deg);
@@ -2498,36 +2513,37 @@ input:-moz-placeholder {
 		}
 		.prem-slide .prem-icon {
 			background-size: contain !important;
+			margin-bottom: 10px;
 		}
 		.prem-slide-1 .prem-icon {
 			background-image: url("../i/15year.png");
 			background-position: center;
-			height: 179px !important;
+			height: 169px !important;
 		}
 		.prem-slide-2 .prem-icon {
 			background-image: url("../i/100.png");
 			background-position: center;
-			height: 154px !important;
+			height: 144px !important;
 		}
 		.prem-slide-3 .prem-icon {
 			background-image: url("../i/time.png");
 			background-position: center;
-			height: 179px !important;
+			height: 169px !important;
 		}
 		.prem-slide-4 .prem-icon {
 			background-image: url("../i/docs.png");
 			background-position: center;
-			height: 155px !important;
+			height: 145px !important;
 		}
 		.prem-slide-5 .prem-icon {
 			background-image: url("../i/1000.png");
 			background-position: center;
-			height: 180px !important;
+			height: 170px !important;
 		}
 		.prem-slide-6 .prem-icon {
 			background-image: url("../i/med.png");
 			background-position: center;
-			height: 154px !important;
+			height: 144px !important;
 		}
 		.prem-slide span {
 			display: block;
@@ -2738,16 +2754,16 @@ input:-moz-placeholder {
 		background-size: 500%;
 	}
 	.step-1 .step-top-content {
-		background-position: 18% 9%;
-		background-size: 430%;
+		background-position: 16% 10%;
+		background-size: 450%;
 	}
 	.step-2 .step-top-content {
-		background-position: 85% 12%;
-		background-size: 470%;
+		background-position: 82% 12%;
+		background-size: 520%;
 	}
 	.step-3 .step-top-content {
-		background-position: 52% 12%;
-		background-size: 470%;
+		background-position: 50% 12%;
+		background-size: 520%;
 	}
 
 	/*workers*/
@@ -2893,6 +2909,7 @@ input:-moz-placeholder {
 		font-family: "HelveticaNeueCyr-Bold";
 		padding-bottom: 20px;
 		padding-right: 27px;
+		line-height: 1.5;
 	}
 	.lek-el-h3:hover {
 		cursor: pointer;
@@ -2931,6 +2948,9 @@ input:-moz-placeholder {
 		-ms-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
 		transform: rotate(180deg);
+	}
+	.lek-el-open-h3 {
+		padding-bottom: 0 !important;
 	}
 
 	/*Projects*/
