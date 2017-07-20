@@ -709,6 +709,7 @@ input:-moz-placeholder {
 	display: block;
 	font-size: 125%;
 	font-family: "HelveticaNeueCyr-Roman";
+	color: #00468b;
 }
 .cont-info span {
 	display: block;
@@ -716,8 +717,43 @@ input:-moz-placeholder {
 	line-height: 1.5;
 	font-family: "HelveticaNeueCyr-Thin";
 }
+.social-network a {
+	display: block;
+	float: left;
+	width: 1.9em;
+	height: 1.9em;
+	border-radius: 50%;
+	background-color: #2365af;
+	margin-top: 0.65em;
+	margin-bottom: 0.25em;
+	margin-right: 1.1em;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.vk {
+	background-image: url("../i/vk.png");
+	background-size: 80%;
+}
+.fb {
+	background-image: url("../i/facebook.png");
+	background-size: 45%;
+	background-position: 40% center !important;
+}
+.insta {
+	background-image: url("../i/instagram.png");
+	background-size: 75%;
+	background-position: center 40% !important;
+}
+.telegram {
+	background-image: url("../i/telegram.png");
+	background-size: 70%;
+	background-position: 40% center !important;
+}
+.cont-info span {
+	margin-bottom: 0.7em;
+}
 .cont-info .adres {
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 .cont-form {
 	color: black;
@@ -728,6 +764,7 @@ input:-moz-placeholder {
 	display: block;
 	font-size: 125%;
 	font-family: "HelveticaNeueCyr-Roman";
+	color: #00468b;
 }
 .cont-form form input {
 	display: block;
@@ -1617,6 +1654,7 @@ input:-moz-placeholder {
 			background-image: url("../i/KRK.png") !important;
 			background-repeat: no-repeat;
 			background-position: center;
+			/*width: calc(100%/3) !important;*/
 		}
 		.slide-2 {
 			background-image: url("../i/OBLpharm.png") !important;

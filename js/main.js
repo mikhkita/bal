@@ -444,7 +444,7 @@ $(document).ready(function(){
                 "margin-bottom": 64 * propw,
             });
             $('.cont-info .adres').css({
-                "margin-bottom": 24 * propw,
+                "margin-bottom": 14 * propw,
             });
             $('.cont-form').css({
                 "margin-top": 70 * propw,
@@ -780,7 +780,7 @@ $(document).ready(function(){
                 "margin-bottom": 64 * propw,
             });
             $('.cont-info .adres').css({
-                "margin-bottom": 24 * propw,
+                "margin-bottom": 20 * propw,
             });
             $('.cont-form').css({
                 "margin-top": 70 * propw,
