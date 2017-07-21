@@ -328,20 +328,17 @@ input:-moz-placeholder {
 		background-size: 70%;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-image: url("../i/KRK.png");
+		opacity: 0;
 	}
-	.slide-2 {
-		background-image: url("../i/OBLpharm.png");
+	.load {
+		opacity: 1;
+		-webkit-transition: opacity 0.5s ease-in-out 0.5s;
+		-moz-transition: opacity 0.5s ease-in-out 0.5s;
+		-o-transition: opacity 0.5s ease-in-out 0.5s;
+		transition: opacity 0.5s ease-in-out 0.5s;
 	}
 	.slide-3 {
-		background-image: url("../i/Valenta.png");
 		background-size: 42%;
-	}
-	.slide-4 {
-		background-image: url("../i/sivilab.png");
-	}
-	.slide-5 {
-		background-image: url("../i/Pharm-sin.png");
 	}
 	.slick-arrow {
 		position: absolute;
@@ -1648,32 +1645,17 @@ input:-moz-placeholder {
 			margin: 0 auto;
 			margin-top: 12px;
 		}
+		.slider-content > .b-2-slide {
+			width: calc(100%/3) !important;
+		}
 		.b-2-slide {
-			height: 60px;
-			background-size: 90% !important;
-			background-image: url("../i/KRK.png") !important;
+			height: 60px !important;
+			background-size: 90%;
 			background-repeat: no-repeat;
 			background-position: center;
-			/*width: calc(100%/3) !important;*/
-		}
-		.slide-2 {
-			background-image: url("../i/OBLpharm.png") !important;
 		}
 		.slide-3 {
-			background-image: url("../i/Valenta.png") !important;
 			background-size: contain !important;
-		}
-		.slide-4 {
-			background-image: url("../i/sivilab.png") !important;
-		}
-		.slide-5 {
-			background-image: url("../i/Pharm-sin.png") !important;
-		}
-		.slide-6 {
-			background-image: url("../i/KRK.png") !important;
-		}
-		.slide-7 {
-			background-image: url("../i/KRK.png") !important;
 		}
 
 
@@ -2479,30 +2461,13 @@ input:-moz-placeholder {
 			z-index: 1;
 		}
 		.b-2-slide {
-			height: 60px;
+			height: 60px !important;
 			background-size: 90% !important;
-			background-image: url("../i/KRK.png") !important;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
-		.slide-2 {
-			background-image: url("../i/OBLpharm.png") !important;
-		}
 		.slide-3 {
-			background-image: url("../i/Valenta.png") !important;
 			background-size: contain !important;
-		}
-		.slide-4 {
-			background-image: url("../i/sivilab.png") !important;
-		}
-		.slide-5 {
-			background-image: url("../i/Pharm-sin.png") !important;
-		}
-		.slide-6 {
-			background-image: url("../i/KRK.png") !important;
-		}
-		.slide-7 {
-			background-image: url("../i/KRK.png") !important;
 		}
 
 		.slick-dotted.slick-slider {

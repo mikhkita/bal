@@ -239,8 +239,6 @@ $(document).ready(function(){
     });
     
 
-    
-
     var width=$(window).width();
         var height=$(window).height();
         var propw=width/1920;
@@ -582,7 +580,110 @@ $(document).ready(function(){
             });
         }
         //end zoom
-    $(window).resize(function(){
+
+    $('.slider-content').on('init',function(event, slick){
+        $('.b-2-slide').addClass("load");
+    });
+    $('.slider-content').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }
+        ]
+    });
+    $('.slick-arrow').text("");
+    $('.slider-content').on('setPosition',function(event, slick){
+        if ($(window).width() > 1200) {
+            $(window).resize();
+        }
+    });
+    
+
+
+
+    $.fn.placeholder = function() {
+        if(typeof document.createElement("input").placeholder == 'undefined') {
+            $('[placeholder]').focus(function() {
+                var input = $(this);
+                if (input.val() == input.attr('placeholder')) {
+                    input.val('');
+                    input.removeClass('placeholder');
+                }
+            }).blur(function() {
+                var input = $(this);
+                if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                    input.addClass('placeholder');
+                    input.val(input.attr('placeholder'));
+                }
+            }).blur().parents('form').submit(function() {
+                $(this).find('[placeholder]').each(function() {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                    }
+                });
+            });
+        }
+    }
+    $.fn.placeholder();
+    
+	var myPlace = new google.maps.LatLng(56.453753, 84.957066);
+    var myOptions = {
+        zoom: 16,
+        center: myPlace,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        zoomControl: true
+    }
+    var contentString = '<div class="map-org-name"><span class="bold-span">Клиника НИИФиРМ им. Е. Д. Гольдберга</span><br>'+
+    '<div class="map-org-info"><span>ул. Нахимова, 1а<br>Томск<br>Томская обл., Россия<br>634034</span></div>'
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    var marker = new google.maps.Marker({
+	    position: myPlace,
+	    map: map,
+	    title: "Клиника НИИФиРМ им. Е. Д. Гольдберга"
+	});
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+    /*var options = {
+        $AutoPlay: true,                                
+        $SlideDuration: 500,                            
+
+        $BulletNavigatorOptions: {                      
+            $Class: $JssorBulletNavigator$,             
+            $ChanceToShow: 2,                           
+            $AutoCenter: 1,                            
+            $Steps: 1,                                  
+            $Lanes: 1,                                  
+            $SpacingX: 10,                              
+            $SpacingY: 10,                              
+            $Orientation: 1                             
+        }
+    };*/
+    
+    //var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+
+});
+$(window).resize(function(){
         var width=$(window).width();
         var height=$(window).height();
         var propw=width/1920;
@@ -919,96 +1020,3 @@ $(document).ready(function(){
         }
         //end zoom
     });
-    $('.slider-content').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 450,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4,
-                }
-            }
-        ]
-    });
-    $('.slick-arrow').text("");
-    
-
-
-    $.fn.placeholder = function() {
-        if(typeof document.createElement("input").placeholder == 'undefined') {
-            $('[placeholder]').focus(function() {
-                var input = $(this);
-                if (input.val() == input.attr('placeholder')) {
-                    input.val('');
-                    input.removeClass('placeholder');
-                }
-            }).blur(function() {
-                var input = $(this);
-                if (input.val() == '' || input.val() == input.attr('placeholder')) {
-                    input.addClass('placeholder');
-                    input.val(input.attr('placeholder'));
-                }
-            }).blur().parents('form').submit(function() {
-                $(this).find('[placeholder]').each(function() {
-                    var input = $(this);
-                    if (input.val() == input.attr('placeholder')) {
-                        input.val('');
-                    }
-                });
-            });
-        }
-    }
-    $.fn.placeholder();
-    
-	var myPlace = new google.maps.LatLng(56.453753, 84.957066);
-    var myOptions = {
-        zoom: 16,
-        center: myPlace,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        zoomControl: true
-    }
-    var contentString = '<div class="map-org-name"><span class="bold-span">Клиника НИИФиРМ им. Е. Д. Гольдберга</span><br>'+
-    '<div class="map-org-info"><span>ул. Нахимова, 1а<br>Томск<br>Томская обл., Россия<br>634034</span></div>'
-    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
-    var marker = new google.maps.Marker({
-	    position: myPlace,
-	    map: map,
-	    title: "Клиника НИИФиРМ им. Е. Д. Гольдберга"
-	});
-    marker.addListener('click', function() {
-        infowindow.open(map, marker);
-    });
-    /*var options = {
-        $AutoPlay: true,                                
-        $SlideDuration: 500,                            
-
-        $BulletNavigatorOptions: {                      
-            $Class: $JssorBulletNavigator$,             
-            $ChanceToShow: 2,                           
-            $AutoCenter: 1,                            
-            $Steps: 1,                                  
-            $Lanes: 1,                                  
-            $SpacingX: 10,                              
-            $SpacingY: 10,                              
-            $Orientation: 1                             
-        }
-    };*/
-    
-    //var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-
-
-});
