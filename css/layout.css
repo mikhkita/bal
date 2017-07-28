@@ -183,14 +183,14 @@ input:-moz-placeholder {
 	display: none;
 	width: 100%;
 	height: 100vh;
-	z-index: 10000;
+	z-index: 10;
 	position: absolute;
 }
 .menu-back-open {
 	display: block;
 }
 .b-1{
-	z-index: 10000;
+	z-index: 10;
 	background-color: #ffffff;
 }
 	.slideout-menu {
@@ -294,6 +294,7 @@ input:-moz-placeholder {
 	.b-2-company-name {
 		margin-bottom: 12px;
 	}
+	.b-2-company .span,
 	.b-2-company span {
 		display: block;
 		text-align: left;
